@@ -78,7 +78,6 @@ function checkDocAndEmailChanges() {
     const recipients = getPeopleWithAccessToActiveDoc();
     const link = doc.getUrl();
     Logger.log(`🔢 New lines detected: ${newLines.length}\n${newLines.join("\n")}`);
-    Logger.log("📬 Number of recipients: %s", recipients.length);
     Logger.log(`📬 Number of recipients: ${recipients.length}`);
 
     MailApp.sendEmail({
